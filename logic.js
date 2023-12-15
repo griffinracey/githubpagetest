@@ -6,12 +6,8 @@ function createMap(bikeStations) {
 
 
   // Create the tile layer that will be the background of our map.
-  let lightmap = L.tileLayer(
-    "https://maps.omniscale.net/v2/{id}/style.grayscale/{z}/{x}/{y}.png",
-    {
-      id: 'grayscalemap-33686e9f',
-      attribution: '&copy; 2023 &middot; <a href="https://maps.omniscale.com/">Omniscale</a> ' +
-      '&middot; Map data: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap  (Lizenz: ODbL)</a>',
+  let lightmap = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }
   );
 
